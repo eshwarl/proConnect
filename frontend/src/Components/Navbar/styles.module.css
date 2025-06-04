@@ -1,0 +1,101 @@
+/* Make navbar background cover full width */
+.container {
+    width: 100vw;
+    background-color: #0a0a0a;
+    padding: 1.2rem 0;
+}
+
+/* Stretch navBar across screen but center inner content */
+.navBar {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* center content inside navbar */
+}
+
+.navBarInner {
+    width: 100%;
+    max-width: 1800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, #0f0f1a, #1a1a2e);
+    border-radius: 1rem;
+    box-shadow: 0 4px 16px rgba(0, 255, 255, 0.1);
+    padding: 1rem 2rem;
+    border: 1px solid rgba(170, 255, 255, 0.05);
+}
+
+/* Logo styling */
+.navBarInner h1 {
+    color: #aaffff;
+    font-family: 'Courier New', monospace;
+    font-size: 1.8rem;
+    letter-spacing: 1.5px;
+    text-shadow: 0 0 6px rgba(170, 255, 255, 0.4);
+}
+
+/* Nav options */
+.navBarOptionContainer {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Make button take full width of navbar */
+.navBarOptionContainer.full-width {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* User profile container */
+.userProfileContainer {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.userName {
+    font-size: 1rem;
+    color: #aaffff;
+    font-weight: 500;
+}
+
+.profileLink {
+    color: #7a1eff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect for profile link */
+.profileLink:hover {
+    color: #ffffff;
+}
+
+/* Join button styling */
+.buttonJoin {
+    background: linear-gradient(135deg, #5f00ba, #2d0c55);
+    color: #aaffff;
+    padding: 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Courier New', monospace;
+    letter-spacing: 1px;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(95, 0, 186, 0.4);
+    border: 1px solid rgba(170, 255, 255, 0.2);
+    transition: all 0.3s ease-in-out;
+    width: 100%; /* Ensure it takes full width within container */
+}
+
+/* Hover effect for Join button */
+.buttonJoin:hover {
+    background: linear-gradient(135deg, #7a1eff, #3c1c6e);
+    color: #ffffff;
+    box-shadow: 0 0 12px rgba(170, 255, 255, 0.6), 0 0 20px rgba(170, 255, 255, 0.3);
+    transform: scale(1.05);
+}

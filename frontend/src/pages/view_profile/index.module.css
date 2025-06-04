@@ -1,0 +1,93 @@
+
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  background:snow;
+  border-radius: 12px;
+  flex-direction: column;
+  gap: 1.2rem;
+ 
+  padding-bottom: 1rem; /* space for profile overlap */
+}
+
+/* Banner/backdrop image */
+.backdropContainer {
+  width: 100%;
+  height: 200px;
+  background-image: url('https://images.pexels.com/photos/545521/pexels-photo-545521.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 20px 20px 20px 20px;
+}
+
+/* Profile picture */
+.profilePicture {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid white;
+  position: absolute;
+  top: 140px; /* positions it overlapping the banner */
+  left: 40px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profileContainer__details {
+  margin-top: 60px; /* Pushes the username below the profile picture */
+}
+
+.card__profileContainer{
+  display: flex;;
+}
+
+.card__profileContainer >img{
+  width:3.4rem;
+  height:auto;
+  height:3.4rem;
+  object-fit: cover;
+
+}
+
+.connectButton{
+  padding-inline: 0.8rem;
+  padding-block: 0.4rem;
+  background: blue;
+  outline: none;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.connectedButton{
+  padding-inline: 0.8rem;
+  padding-block: 0.4rem;
+  background: green;
+  outline: none;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.workHistoryContainer {
+  display: flex;
+  gap: 1.4rem;
+  padding-top: 1.4rem;
+  flex-wrap: wrap;
+  width: 100%;
+  
+}
+
+.workHistoryCard{
+  min-width:fit-content;
+  padding-inline: 2.5rem;
+  padding-block: 1rem;
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px rgba(173, 173, 173,);
+}

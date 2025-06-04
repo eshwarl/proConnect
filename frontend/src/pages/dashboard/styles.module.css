@@ -1,0 +1,243 @@
+.scrollComponent {
+/* make .scrollComponent the positioning context for absolute children */
+  display: flex;
+  justify-content: center;
+  /* optional, just for subtle contrast */
+  flex-direction: column;
+}
+
+.createPostContainer {
+  display: flex;
+  height:10svh;
+  width:100%;
+ padding-inline: 0.8rem;
+ gap:1.3rem;
+ position:relative;
+ align-items:center;
+ background:snow;
+ border-radius:20px;
+}
+
+.profileImage {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.contentRight {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  gap: 12px;
+}
+
+.textarea {
+  flex: 1;
+  min-height: 80px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  resize: vertical;
+}
+
+.uploadButton {
+  position: absolute;
+  right: 25px;
+  bottom: -12px;
+  background-color: #232cca;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #d1caca;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+
+
+.Fab {
+  width: 48px;
+  height: 48px;
+  background-color: #007bff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.Fab:hover {
+  background-color: #0056b3;
+}
+
+.fabIcon {
+  width: 24px;
+  height: 24px;
+  stroke: white;
+}
+
+.singleCard{
+  width:100%;
+  border-radius: 10px 10px 0px 0px;
+  border-bottom: 1px solid rgb(179,179,179);
+
+
+}
+
+.singleCard__profileContainer{
+  display: flex;
+  align-items: flex-start;
+  gap: 1.2rem;
+padding: 1.2rem;
+padding-right: 3.4rem;
+}
+
+.singleCard__profileContainer >img{
+  width:10%;
+  border-radius: 50%;
+}
+
+.singleCard__image{
+  width: 100%;
+  padding-top: 0.6rem;
+  height:fit-content;
+  overflow: hidden;
+}
+
+.singleCard__image >img{
+  width:100%;
+  height:auto;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.interactions {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.likeButton {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: #0070f3;
+}
+
+.commentBox {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.commentInput {
+  flex: 1;
+  padding: 4px 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.commentSubmit {
+  padding: 4px 10px;
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.commentsList {
+  margin-top: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.comment {
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+.optionsContainer{
+  display: flex;
+  height:20%;
+  width:100%;
+  justify-content: space-between;
+  
+
+  
+}
+.singleOption__optionsContainer{
+  display: flex;
+  align-items: center;
+  gap:1.2rem;
+ justify-content: center;
+}
+
+.singleOption__optionsContainer > svg{
+  height: 100%;
+  width:10%;
+}
+
+.commentsContainer{
+  position: fixed;
+  width:100vw;
+  height:100vh;
+  top:0;
+  left:0;
+  z-index:2;
+  background: rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.allCommentsContainer{
+  width:40vw;
+  height:80vh;
+  background: white;
+  border-radius: 10px;
+  position: relative;
+  padding: 1.4rem;
+}
+
+.postCommentsContainer{
+position:absolute;
+bottom:1.2rem;
+left:1.2rem;
+width:90%;
+display:flex;
+align-items: center;
+justify-content: center;
+gap:1.2rem;
+
+}
+
+.postCommentsContainer > input{
+  flex:0.9;
+ padding-inline: 1.5rem;
+ padding-block: 1.2rem;
+ border:none;
+ background-color:whitesmoke;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  ;
+}
+.postCommentContainer__commentBtn{
+  flex:0.1;
+  padding: 0.8rem 1.2rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  text-align: center;
+ 
+}
